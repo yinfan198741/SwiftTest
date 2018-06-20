@@ -19,6 +19,7 @@ class FunctionVC: UIViewController {
         let node = BinarySearchTree.Node(BinarySearchTree.Leaf, 5, BinarySearchTree.Leaf)
         print(leaf)
         print(node)
+        print("aasdfasdf")
     }
     
 }

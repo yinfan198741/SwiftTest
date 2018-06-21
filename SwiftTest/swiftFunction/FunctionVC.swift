@@ -15,12 +15,15 @@ class FunctionVC: UIViewController {
         super.viewDidLoad()
         print("FunctionVC")
         
-        let leaf = BinarySearchTree.Leaf
-        let node = BinarySearchTree.Node(BinarySearchTree.Leaf, 5, BinarySearchTree.Leaf)
-        print(leaf)
-        print(node)
-        print("aasdfasdf")
-        print("dddd")
+        let left = BinarySearchTree.Node(BinarySearchTree.Leaf, 4, BinarySearchTree.Leaf)
+        let right = BinarySearchTree.Node(BinarySearchTree.Leaf, 6, BinarySearchTree.Leaf)
+        var node = BinarySearchTree.Node(left ,  5, right)
+       
+        print(node.isBST)
+        print(node.contails(x: 3))
+        print("before count = ", node)
+        node.insert(x: 8)
+        print("after count = ", node)
+       
     }
-    
 }
